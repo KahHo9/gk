@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="Amount: "
+        android:textSize="16dp"
+        android:layout_margin="10dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:text="-"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:text="+"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_cream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cream"
+                android:textSize="50dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_chocolateship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chocolate ship"
+                android:textSize="50dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_vanilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vanilla"
+                android:textSize="50dp" />
+
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Order"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+
+    </LinearLayout>
+</LinearLayout>
